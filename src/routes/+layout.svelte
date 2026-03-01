@@ -15,12 +15,28 @@
 
 	<div id="stranka">{@render children()}</div>
 	<div id="patka">
-		<div id="patka_text" class="patka_div">
-			<br>Autoři: Jakub Štěpánek a Tomáš Tarábek
-			<br> 2026	
+	<div id="patka_1">projekt Meteostanice</div>
+	<div id="patka_2"><div id="patka_text" class="patka_div">
+			<ul>
+				<li class="bez_odrazky hlavni_sekce "><span class="podtrhnuto">Autoři:</span> <ul><li class="bez_odrazky">Jakub Štěpánek</li>
+				<li class="bez_odrazky">Tomáš Tarábek</li></ul></li>
+				<li class="bez_odrazky hlavni_sekce"><span class="podtrhnuto">Vedoucí práce:</span> <ul>
+					<li class="bez_odrazky">Ing. Lukáš Jacečko</li>
+				</ul></li>
+				<li class="bez_odrazky hlavni_sekce"> <span class="podtrhnuto">Kontakty</span>
+					<ul>
+						<li class="bez_odrazky">Jakub Štěpánek: stepanek123@trebesin.cz</li>
+						<li class="bez_odrazky">Tomáš Tarábek: tarabek123@trebesin.cz</li>
+						<li class="bez_odrazky">Ing. Lukáš Jacečko: jacecko@trebesin.cz</li>
+					</ul>
+				</li>
+			</ul>
+			
 		</div>
-		<div id="patka_logo" class="patka_div"><img src="trebesin_logo.png" alt="Logo Třebešín"></div>
-
+		<div id="patka_logo" class="patka_div"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></div>
+</div>
+	<div id="patka_3">2026</div>
+		
 	</div>
 
 
@@ -49,9 +65,9 @@
 	}
 	#patka{
 		width: auto;
-		height: 100px;
+		min-height: 25rem;
 		background-color: #1d71b8;
-		display: flex;
+		display: block;
 		gap: 10px;
 		padding: 10px 25px 10px 25px;
 		
@@ -59,18 +75,53 @@
 	}
 	#patka_text{
 		font-size: large;
-		border: 1px black solid;
-		text-align: center;
-		align-items: center;
-		justify-content: center;
+		/* border: 1px black solid; */
+		padding-left: 10%;
 		
 	}
 	#patka_logo{
-		border: 1px black solid;
+		/* border: 1px black solid; */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 10rem;
 
 	}
 	.patka_div{
 		width:100% ;
+	}
+	.bez_odrazky{
+		list-style-type: none;
+		font-size: large;
+		padding-left: 1rem;
+	}
+	.podtrhnuto{
+		text-decoration: underline;
+		
+	}
+	.hlavni_sekce{
+		margin-bottom: 1.5rem;
+	}
+	#patka_1, #patka_2, #patka_3{
+		/* border: 2px dashed red; */
+		min-height: 3rem;
+	}
+	#patka_1, #patka_3{
+		text-align: center;
+		padding-top: 1%;
+		
+
+	}
+	#patka_3{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	#patka_2{
+		display: flex;
+	}
+	#logo_trebesin{
+		max-width: 25rem;
 	}
 </style>
 

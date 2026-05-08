@@ -45,7 +45,7 @@
 </div>
 
 	
-	<div class="patka_3" id="div_2026">2026</div></div>
+	<div class="patka_3" id="div_2026">2026<br><br>Děkujeme za návštěvu našeho webu</div></div>
 		
 	</div>
 

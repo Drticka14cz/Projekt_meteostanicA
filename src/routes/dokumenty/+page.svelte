@@ -2,7 +2,7 @@
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/">DOMŮ</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
-<div class="mid"><h1>Vývoj Meteostanice</h1>
+<div class="mid mid_text"><h1>Vývoj Meteostanice</h1>
 Začátek projektu na hardware započal v lednu roku 2026. Původní návrh nebyl ani blízko meteostanici. Prvnotní návrh byl gameboy, nebo nějaká malá kompaktní herní konzole. Avšak po rozhovoru s vedoucím práce, panem ing. L. Jacečkem jsme došli k tomu, že zkusíme něco jiného. Hlavním problémem by byl totiž samotný display. 
 <p>Později po několika nápadech a hledání na <a href="https://dratek.cz/">drátek.cz</a> jsme se rozhodli udělat meteostanici. Hlavní součástka je <a href="https://dratek.cz/arduino-platforma/1361-bme280-modul-mereni-teploty-vlhkosti-a-barometrickeho-tlaku-precizni.html">modul meteočidla BMP280 3v1</a>. Dále používáme LCD display, tlačítka a rgb led. Více o tom co se nachází v meteostanici najdete na návodech <a href="/navody">zde</a>. </p>
 <p class="uprostred">Jeden z prvních návhrhů vypadal takto:</p><div class="uprostred"><img src="navrh_meteostanice_1.png" alt="prvni_navrh" class="obrazek_1"></div>
@@ -12,6 +12,9 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
 <div class="uprostred"><img src="Meteostanice_zapojeni.png" alt="vzhled zapojení" class="obrazek_1 rotate"></div>
 <p>Během utrpení při zapojování a psaní kódu pro arduino tak Tomáš pracoval na 3D modelu. Vše bylo vyměřeno přímo na komponenty meteostanice a tak vznikla unikátní krabička naší meteostanice. 3D model byl vypracován v nejlepším programu na 3D modely - Solid works. Během tvorby nebyl žádný problém :D. </p>
 <div class="uprostred ukazka_disegnu_div"><img src="meteostanice_solidSCR_1.png" alt="screen z solidu" class="obrazek_1 disegn"><img src="meteostanice_solidSCR_2.png" alt="druhy screen ze solidu" class="obrazek_1 disegn"></div>
+<p>Po vymodelování krabičky byla poslána k vytisknutí. Hlavní část se tiskla 8 hodin a musela být rozpůlena, aby se vešla na naší 3D tiskárnu. Vše se vytisklo na 1. pokus správně. Rozpůlenou hlavní část jsme tím pádem museli slepit a zpevnit. Dále jsme dotiskli zadní část, žluté sluníčko, kryt na display a nápis METEOSTANICE. Dále jsme do toho vložili kompletní zapojení, připevnili vše šroubky(Zadní kryt k hlavní části, čidlo k hlavní části, arduino k hlavní části, LCD display do otvoru a nepájivé pole do kolejniček.)</p>
+<div class="uprosted ukazka_disegnu_div mezera"><img src="meteo-sestavena-predek.png" alt="jedna" class="obrazek_1 disegn"><img src="meteo-sestavena-zezadu.png" alt="dva" class="obrazek_1 disegn rotate">
+</div>
 
 <p id="obsah">Finální obsah projektu:</p>
 
@@ -139,6 +142,14 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
         min-height: 100vh;
         padding: 5% 15% 5% 15%;
     }
+    .mid_text{
+        padding: 5% 15% 5% 15%;
+        text-align: left;
+        text-wrap: pretty;
+        line-height: 1.7;
+        hyphens: auto;
+        
+    }
     h1{
         text-align: center;
         font-family: var(--font-mono);
@@ -168,6 +179,15 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
         width: 40%;
         margin: 2% 0 7% 0;
 
+    }
+    .mezera{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 10vw;
     }
     .rotate{
         transform: rotate(90deg);

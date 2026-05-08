@@ -6,7 +6,7 @@
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/">DOMŮ</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
-<div class="mid"><h1>Návody</h1>
+<div class="mid mid_text"><h1>Návody</h1>
     <p>Vítejte v návodu k použití naší Meteostanice. Před použitím si přečtěte celý návod.
     </p>
     <p>POPIS METEOSTANICE:
@@ -43,11 +43,11 @@
                 </li>
                 <li class="popisek">
                     <h3 id="lcd">LCD</h3>
-                    <p>Na této obrazovce se zobrazuje výpis hodnot naměřené sensory Meteostanice. Jsou 4 možné hodnoty: teplota, tlak, vlhkost, intenzita.</p>
+                    <p>Na této obrazovce se zobrazuje výpis hodnot naměřené senzory Meteostanice. Jsou 4 možné hodnoty: teplota, tlak, vlhkost, intenzita.</p>
                 </li>
                 <li class="popisek">
                     <h3 id="fot">FOT</h3>
-                    <p>Zde se zezhora nachází otvor na fotorezistor. Jeden ze sensorů Meteostanice. Měří intenzitu osvětlení. Nezakrývat!</p>
+                    <p>Zde se zezhora nachází otvor na fotorezistor. Jeden ze senzorů Meteostanice. Měří intenzitu osvětlení. Nezakrývat!</p>
                 </li>
             </ol>
              
@@ -63,12 +63,12 @@
                     <ol class="popisky_div">
                         <li class="popisek">
                             <h3 id="z_zel">SEN</h3>
-                            <p>Zde se nachází hlavní sensor Meteostanice. Nezakrývat tento otvor, jinak budou zkreslená data!</p>
+                            <p>Zde se nachází hlavní senzor Meteostanice. Nezakrývat tento otvor, jinak budou zkreslená data!</p>
                         </li>
                     
                         <li class="popisek">
                             <h3 id="z_cer">MON</h3>
-                            <p>Tady nevim co se nachází tome</p>
+                            <p>Zde se nachází montážní otvor. Na Meteostanici se jich nachází 5. Jsou zde použity šrobky 1,5mm. </p>
                         </li>
                     
                     
@@ -228,6 +228,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .mid_text{
+        padding: 5% 15% 5% 15%;
+        text-align: left;
+        text-wrap: pretty;
+        line-height: 1.7;
+        hyphens: auto;
+        
     }
     h1{
         text-align: center;

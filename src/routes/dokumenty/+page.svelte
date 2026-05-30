@@ -15,8 +15,14 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
 <p>Po vymodelování krabičky byla poslána k vytisknutí. Hlavní část se tiskla 8 hodin a musela být rozpůlena, aby se vešla na naší 3D tiskárnu. Vše se vytisklo na 1. pokus správně. Rozpůlenou hlavní část jsme tím pádem museli slepit a zpevnit. Dále jsme dotiskli zadní část, žluté sluníčko, kryt na display a nápis METEOSTANICE. Dále jsme do toho vložili kompletní zapojení, připevnili vše šroubky(Zadní kryt k hlavní části, čidlo k hlavní části, arduino k hlavní části, LCD display do otvoru a nepájivé pole do kolejniček.)</p>
 <div class="uprosted ukazka_disegnu_div mezera"><img src="meteo-sestavena-predek.png" alt="jedna" class="obrazek_1 disegn"><img src="meteo-sestavena-zezadu.png" alt="dva" class="obrazek_1 disegn rotate">
 </div>
+<p>Dále byly provedeny už jen estetické změny, jako například dovytisknutí žlutého sluníčka na přední stranu meteostanice. Doděláním a dovytisknutím těchto detailů jsme dokončili úspěšně náš projekt.</p>
 
 <p id="obsah">Finální obsah projektu:</p>
+<ul>
+    <li>Meteostanice (krabička + zapojení)</li>
+    <li>Doprovodný web s návodem k použití</li>
+    <li>propagační leták</li>
+</ul>
 
 
 </div></main>
